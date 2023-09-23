@@ -24,6 +24,9 @@ const budget = {
     ]
 };
 
+app.use(cors({
+    origin: '*'
+}));
 
 app.get('/budget', (req, res) => {
     res.json(budget);
